@@ -33,7 +33,7 @@ To play the game click here: https://suvam1997.github.io/PigzDice-1.0.2/
 A. Application Preview
 =====
 
-![Preview_PigxDice_1 0 1](https://user-images.githubusercontent.com/53318366/91453258-24046a00-e89d-11ea-8f1e-4f87dcd0ad76.gif)
+![Preview_PigzDice_1 0 2](https://user-images.githubusercontent.com/53318366/91643833-55736600-ea54-11ea-8989-41ca17d21a6f.gif)
 
 B. Code Preview
 ====
