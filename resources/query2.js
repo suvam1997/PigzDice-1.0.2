@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("#btn-roll").click(function () {
         $(".dice1").effect("shake", {
             times: 10
-        }, 250);
+        }, 235);
         $(".dice2").effect("shake", {
             times: 10
         }, 250);

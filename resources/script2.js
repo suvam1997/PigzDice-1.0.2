@@ -36,7 +36,7 @@ function startClicker() {
     clicker = setInterval(() => {
         count < limit ? document.getElementById("btn-roll").click() : document.getElementById("btn-add-pass").click();
         count += 1;
-    }, 800);
+    }, 1000);
 }
 
 function stopClicker() {
