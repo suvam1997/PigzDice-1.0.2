@@ -1,8 +1,8 @@
-PigzDice_1.0.1
+PigzDice_1.0.2
 ====
-#### PigzDice_1.0.1 is a simple dice game designed by Suvam Das using HTML, CSS, JavaScript and Jquery. ####
+#### PigzDice_1.0.2 is a simple dice game designed by Suvam Das using HTML, CSS, JavaScript and Jquery. ####
 
-To play the game click here: https://suvam1997.github.io/PigzDice-1.0.1/
+To play the game click here: https://suvam1997.github.io/PigzDice-1.0.2/
 
 ### GAME RULES ###
 
@@ -12,7 +12,7 @@ To play the game click here: https://suvam1997.github.io/PigzDice-1.0.1/
 - The player can choose to 'ADD & PASS', which means that his CURRENT score gets added to his MAIN score. After that, it's the next player's turn
 - The first player to reach 100 points on GLOBAL score wins the game
 
-### Version 1.0.1 features ###
+### Version 1.0.2 features ###
 
 - Play with friend
 - Play with Computer
@@ -21,11 +21,11 @@ To play the game click here: https://suvam1997.github.io/PigzDice-1.0.1/
 
 ### Updates and Changes: ###
 
-- Play against Computer
-- "ROLL DICE" and "ADD & PASS" hide when computer is playing
+- Play with single dice or double dice as you want
 
-### View Previous Version ###
+### View Previous Versions ###
 
+- https://github.com/suvam1997/PigzDice-1.0.1
 - https://github.com/suvam1997/PigzDice-1.0.0
 
 ----------
