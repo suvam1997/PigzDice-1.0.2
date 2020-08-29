@@ -40,17 +40,33 @@ B. Code Preview
 
 ### 1. index.html ###
 
-![index](https://user-images.githubusercontent.com/53318366/91442671-d59c9e80-e88f-11ea-92cd-e548fd62079e.png)
+![index](https://user-images.githubusercontent.com/53318366/91643377-6d48eb00-ea50-11ea-865f-a84857058f65.png)
 
-### 2. style.css ###
+### 2. doubleDice.html ###
 
-![style](https://user-images.githubusercontent.com/53318366/91442678-d7666200-e88f-11ea-8715-c6e13609b86e.png)
+![doubleDice](https://user-images.githubusercontent.com/53318366/91643376-6a4dfa80-ea50-11ea-8134-71d71b764e0c.png)
 
-### 3. app.js ###
+### 3. style1.css ###
 
-![app](https://user-images.githubusercontent.com/53318366/91442652-cf0e2700-e88f-11ea-9a8e-2011a0c1a0eb.png)
+![style1](https://user-images.githubusercontent.com/53318366/91643387-746ff900-ea50-11ea-93c7-e03ea0156cc4.png)
 
-### 4. query.js ###
+### 4. style2.css ###
 
-![quey](https://user-images.githubusercontent.com/53318366/91442676-d6cdcb80-e88f-11ea-9db2-b3b73626bcff.png)
+![style2](https://user-images.githubusercontent.com/53318366/91643388-7639bc80-ea50-11ea-993a-0f4ab63085d8.png)
 
+### 5. script1.js ###
+
+![script1](https://user-images.githubusercontent.com/53318366/91643383-7043db80-ea50-11ea-8f33-edbbd49449e4.png)
+
+### 6. script2.js ###
+
+![script2](https://user-images.githubusercontent.com/53318366/91643385-72a63580-ea50-11ea-8582-82ed61b7fdae.png)
+
+### 7. query1.js ###
+
+![quey1](https://user-images.githubusercontent.com/53318366/91643379-6f12ae80-ea50-11ea-873f-4570e3a1373c.png)
+
+
+### 8. query2.js ###
+
+![quey2](https://user-images.githubusercontent.com/53318366/91643381-6fab4500-ea50-11ea-947e-ec1cd8d48ecc.png)
