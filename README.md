@@ -1,4 +1,4 @@
-PigzDice_1.0.2
+PigzDice 1.0.2
 ====
 #### PigzDice_1.0.2 is a simple dice game designed by Suvam Das using HTML, CSS, JavaScript and Jquery. ####
 
