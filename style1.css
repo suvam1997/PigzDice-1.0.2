@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Lato;
+    font-weight: 300;
+    color: #555;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*---------------------------------------------------------*/
+/*                        ANIMATION                        */
+/*---------------------------------------------------------*/
+
+
+@-webkit-keyframes shake {
+  10%, 90% { -webkit-transform: translate3d(-2px, 0, 0); transform: translate3d(-2px, 0, 0); }
+  20%, 80% { -webkit-transform: translate3d(8px, 0, 0); transform: translate3d(8px, 0, 0); }
+  30%, 50%, 70% { -webkit-transform: translate3d(-16px, 0, 0); transform: translate3d(-16px, 0, 0); }
+  40%, 60% { -webkit-transform: translate3d(16px, 0, 0); transform: translate3d(16px, 0, 0); }
+}
+
+
+@keyframes shake {
+  10%, 90% { -webkit-transform: translate3d(-2px, 0, 0); transform: translate3d(-2px, 0, 0); }
+  20%, 80% { -webkit-transform: translate3d(8px, 0, 0); transform: translate3d(8px, 0, 0); }
+  30%, 50%, 70% { -webkit-transform: translate3d(-16px, 0, 0); transform: translate3d(-16px, 0, 0); }
+  40%, 60% { -webkit-transform: translate3d(16px, 0, 0); transform: translate3d(16px, 0, 0); }
+}
+
+@-webkit-keyframes bounce-7 {
+    0%   { -webkit-transform: scale(1,1)      translateY(0); transform: scale(1,1)      translateY(0); }
+    10%  { -webkit-transform: scale(1.1,.9)   translateY(0); transform: scale(1.1,.9)   translateY(0); }
+    30%  { -webkit-transform: scale(.9,1.1)   translateY(-60px); transform: scale(.9,1.1)   translateY(-60px); }
+    50%  { -webkit-transform: scale(1.05,.95) translateY(0); transform: scale(1.05,.95) translateY(0); }
+    57%  { -webkit-transform: scale(1,1)      translateY(-7px); transform: scale(1,1)      translateY(-7px); }
+    64%  { -webkit-transform: scale(1,1)      translateY(0); transform: scale(1,1)      translateY(0); }
+    100% { -webkit-transform: scale(1,1)      translateY(0); transform: scale(1,1)      translateY(0); }
+}
+
+@keyframes bounce-7 {
+    0%   { -webkit-transform: scale(1,1)      translateY(0); transform: scale(1,1)      translateY(0); }
+    10%  { -webkit-transform: scale(1.1,.9)   translateY(0); transform: scale(1.1,.9)   translateY(0); }
+    30%  { -webkit-transform: scale(.9,1.1)   translateY(-60px); transform: scale(.9,1.1)   translateY(-60px); }
+    50%  { -webkit-transform: scale(1.05,.95) translateY(0); transform: scale(1.05,.95) translateY(0); }
+    57%  { -webkit-transform: scale(1,1)      translateY(-7px); transform: scale(1,1)      translateY(-7px); }
+    64%  { -webkit-transform: scale(1,1)      translateY(0); transform: scale(1,1)      translateY(0); }
+    100% { -webkit-transform: scale(1,1)      translateY(0); transform: scale(1,1)      translateY(0); }
+}
+
+
+/*---------------------------------------------------------*/
+/*                          ICONS                          */
+/*---------------------------------------------------------*/
+
+
+ion-icon {
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    -webkit-transition: margin 0.3s;
+    transition: margin 0.3s;
+    --ionicon-stroke-width: 15px;
+}
+
+
+/*---------------------------------------------------------*/
+/*                    BODY & BACKGROUND                    */
+/*---------------------------------------------------------*/
+
+
+body {
+    position: relative;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(62, 20, 20, 0.40)), to(rgba(62, 20, 20, 0.40))), url(resources/back.jpg);
+    background: linear-gradient(rgb(62, 20, 20, 0.40), rgba(62, 20, 20, 0.40)), url(resources/back.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+/*---------------------------------------------------------*/
+/*                       PLAYING AREA                      */
+/*---------------------------------------------------------*/
+
+
+.main-container {
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+/*---------------------------------------------------------*/
+/*                        PLAYER BOX                       */
+/*---------------------------------------------------------*/
+
+
+.player-box-0,
+.player-box-1 {
+    width: 50%;
+    height: 100%;
+}
+
+.player-box-0 {
+    float: left;
+}
+
+.player-box-1 {
+    float: right;
+    margin-left: 0;
+}
+
+.player-name {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 120px 0 10px 0;
+    letter-spacing: 2px;
+}
+
+.current-score-box {
+    width: 120px;
+    height: 85px;
+    background-color: #EB4D4D;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 130px auto;
+    padding: 12px;
+}
+
+.current-score {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.title {
+    color: #fff;
+    font-size: 15px
+}
+
+.main-score {
+    text-align: center;
+    color: #EB4D4D;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+
+/*---------------------------------------------------------*/
+/*                         BUTTONS                         */
+/*---------------------------------------------------------*/
+
+
+button {
+    position: absolute;
+    width: 200px;
+    font-size: 20px;
+    text-transform: uppercase;
+    left: 50%;
+    top: 8%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    outline: none;
+    /* to remove the border when clicked */
+    -webkit-transition: background-color 0.3s, color 0.3s, font-size 0.2s;
+    transition: background-color 0.3s, color 0.3s, font-size 0.2s;
+    cursor: pointer;
+}
+
+.btn-computer {
+    margin-top: 515px;
+    font-size: 15px;
+}
+
+.btn-double-dice {
+    margin-top: 470px;
+    font-size: 15px;
+}
+
+.btn-computer ion-icon, 
+.btn-double-dice ion-icon  {
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.btn-computer:hover,
+.btn-computer:active,
+.btn-double-dice:hover,
+.btn-double-dice:active
+{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-roll {
+    top: 407px;
+}
+
+.btn-roll:hover,
+.btn-roll:active {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.btn-add-pass {
+    top: 457px;
+}
+
+.btn-add-pass:hover,
+.btn-add-pass:active {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.btn-reset:hover,
+.btn-reset:active {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.btn-rename-0 {
+    margin-top: 470px;
+    left: 250px;
+}
+
+.btn-rename-0:hover {
+    font-weight: 600;
+}
+
+.btn-rename-1 {
+    margin-top: 470px;
+    left: 751px;
+}
+
+.btn-rename-1:hover {
+    font-weight: 600;
+}
+
+
+/*---------------------------------------------------------*/
+/*                      ACTIVE PLAYER                      */
+/*---------------------------------------------------------*/
+
+
+.active {
+    background-color: #f7f7f7;
+}
+
+.active .player-name {
+    font-weight: 300;
+}
+
+.active .player-name::after {
+    content: "\002a";
+    position: absolute;
+    color: #EB4D4D;
+    font-weight: bold;
+    margin: 10px 0 0 20px;
+}
+
+
+/*---------------------------------------------------------*/
+/*                      WINNER PLAYER                      */
+/*---------------------------------------------------------*/
+
+
+.crown {
+    display: none;
+    width: 150px;
+    height: auto;
+    margin: 130px auto 0 auto;
+    -webkit-animation-duration: 1.15s;
+    animation-duration: 1.15s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-animation-name: bounce-7;
+    animation-name: bounce-7;
+    -webkit-filter: drop-shadow(0px 0px 10px blue);
+    filter: drop-shadow(0px 0px 10px blue);
+}
+
+.winner .crown {
+    display: block;
+}
+
+.winner .player-name {
+    margin: 20px 0 10px 0;
+    font-weight: 400;
+}
+
+.winner .main-score {
+    font-weight: 300;
+}
+
+.winner .current-score-box {
+    display: none;
+}
+
+.winner .btn-rename-0,
+.winner .btn-rename-1 {
+    display: none;
+}
+
+
+/*---------------------------------------------------------*/
+/*                          DICE                           */
+/*---------------------------------------------------------*/
+
+
+.dice {
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-left: -50px;
+    -webkit-box-shadow: 0 1px 30px rgba(209, 209, 209, 0.6);
+    box-shadow: 0 1px 30px rgba(209, 209, 209, 0.6);
+}
+
+.dice { 
+    margin-top: 220px; 
+    display: inline-block;
+}
+
+.shake-dice {
+    -webkit-animation: shake 0.4s cubic-bezier(.36, .07, .19, .97);
+    animation: shake 0.4s cubic-bezier(.36, .07, .19, .97);
+    -webkit-animation-iteration-count: 2;
+    animation-iteration-count: 2;
+    /* how many time animation will occur */
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+                                                                                /*
+                                                                                Suvam Das
+                                                                                suvamdas27@gmail.com
+                                                                                https://www.instagram.com/mesuvam
+                                                                                https://www.linkedin.com/in/suvam-das-81b3b2154/
+                                                                                https://www.facebook.com/chondro.bindu.chand.1997/
+                                                                                */
