@@ -14,10 +14,10 @@ To play the game click here: https://suvam1997.github.io/PigzDice-1.0.2/
 
 ### Version 1.0.2 features ###
 
-- Play with friend
-- Play with Computer
-- Better features
 - Single dice or double dice game
+- Play with Computer
+- Play with friend
+- Better features
 - Easy UI
 
 ### Updates and Changes: ###
