@@ -173,55 +173,102 @@ document.getElementById('btn-add-pass').addEventListener("click", () => {
 });
 
 document.getElementById("btn-reset").addEventListener("click", () => {
-    if (confirm(`This will reset the game to its default.
+    if (computer === 0) {
+        if (confirm(`This will reset the game to its default.
 Your score can not be recovered after resetting.
 Are you sure you want to reset?`)) {
-        mainScore = [0, 0], currentScore = 0, activePlayer = 0, computer = 0, limit = 3, count = 0;
-        document.querySelector(".player-box-0").classList.remove("winner");
-        document.querySelector(".player-box-1").classList.remove("winner");
-        document.getElementById('btn-roll').style.display = "block";
-        document.getElementById('btn-add-pass').style.display = "block";
-        document.querySelector(".player-box-0").classList.add("active");
-        document.querySelector(".player-box-1").classList.remove("active");
-        document.getElementById("current-score-0").textContent = "00";
-        document.getElementById("current-score-1").textContent = "00";
-        document.getElementById("main-score-0").textContent = "00";
-        document.getElementById("main-score-1").textContent = "00";
-        document.querySelector("#player-name-0").innerHTML = "PLAYER 1";
-        document.querySelector("#player-name-1").innerHTML = "PLAYER 2";
-        document.getElementById("dice1").src = "dice-1.png";
-        document.getElementById("dice2").src = "dice-6.png";
-        stopClicker();
+            mainScore = [0, 0], currentScore = 0, activePlayer = 0, count = 0;
+            document.querySelector(".player-box-0").classList.remove("winner");
+            document.querySelector(".player-box-1").classList.remove("winner");
+            document.getElementById('btn-roll').style.display = "block";
+            document.getElementById('btn-add-pass').style.display = "block";
+            document.querySelector(".player-box-0").classList.add("active");
+            document.querySelector(".player-box-1").classList.remove("active");
+            document.getElementById("current-score-0").textContent = "00";
+            document.getElementById("current-score-1").textContent = "00";
+            document.getElementById("main-score-0").textContent = "00";
+            document.getElementById("main-score-1").textContent = "00";
+            document.getElementById("dice1").src = "dice-1.png";
+            document.getElementById("dice2").src = "dice-6.png";
+            stopClicker();
+        }
+    } else {
+        if (confirm(`This will reset the game to its default.
+Your score can not be recovered after resetting.
+Are you sure you want to reset?`)) {
+            mainScore = [0, 0], currentScore = 0, activePlayer = 0, count = 0;
+            document.querySelector(".player-box-0").classList.remove("winner");
+            document.querySelector(".player-box-1").classList.remove("winner");
+            document.getElementById('btn-roll').style.display = "block";
+            document.getElementById('btn-add-pass').style.display = "block";
+            document.querySelector(".player-box-0").classList.add("active");
+            document.querySelector(".player-box-1").classList.remove("active");
+            document.getElementById("current-score-0").textContent = "00";
+            document.getElementById("current-score-1").textContent = "00";
+            document.getElementById("main-score-0").textContent = "00";
+            document.getElementById("main-score-1").textContent = "00";
+            document.getElementById("dice1").src = "dice-1.png";
+            document.getElementById("dice2").src = "dice-6.png";
+            document.getElementById("btn-rename-1").style.display = "none";
+            document.getElementById("player-name-1").innerHTML = "computer";
+            stopClicker();
+        }
     }
+    
 });
 
 document.getElementById("btn-computer").addEventListener("click", () => {
-    if (confirm("This will reset the game to it's default and \"COMPUTER\" will replace \"PLAYER 2\".")) {
-        computer = 1;
-        document.querySelector("#player-name-1").innerHTML = "COMPUTER";
-        mainScore = [0, 0], currentScore = 0, activePlayer = 0, limit = 0, count = 0;
-        document.querySelector(".player-box-0").classList.remove("winner");
-        document.querySelector(".player-box-1").classList.remove("winner");
-        document.getElementById('btn-roll').style.display = "block";
-        document.getElementById('btn-add-pass').style.display = "block";
-        document.querySelector(".player-box-0").classList.add("active");
-        document.querySelector(".player-box-1").classList.remove("active");
-        document.getElementById("current-score-0").textContent = "00";
-        document.getElementById("current-score-1").textContent = "00";
-        document.getElementById("main-score-0").textContent = "00";
-        document.getElementById("main-score-1").textContent = "00";
-        document.getElementById("dice1").src = "dice-1.png";
-        document.getElementById("dice2").src = "dice-6.png";
-        stopClicker();
-    }
+    if (computer === 0) {
+        if (confirm("This will reset the game to it's default and \"COMPUTER\" will replace \"PLAYER 2\".")) {
+            computer = 1;
+            document.getElementById("btn-computer").innerHTML = `<ion-icon name="happy-outline"></ion-icon>Play vs Friend`;
+            document.querySelector("#player-name-1").innerHTML = "COMPUTER";
+            mainScore = [0, 0], currentScore = 0, activePlayer = 0, limit = 0, count = 0;
+            document.querySelector(".player-box-0").classList.remove("winner");
+            document.querySelector(".player-box-1").classList.remove("winner");
+            document.getElementById('btn-roll').style.display = "block";
+            document.getElementById('btn-add-pass').style.display = "block";
+            document.querySelector(".player-box-0").classList.add("active");
+            document.querySelector(".player-box-1").classList.remove("active");
+            document.getElementById("current-score-0").textContent = "00";
+            document.getElementById("current-score-1").textContent = "00";
+            document.getElementById("main-score-0").textContent = "00";
+            document.getElementById("main-score-1").textContent = "00";
+            document.getElementById("dice1").src = "dice-1.png";
+            document.getElementById("dice2").src = "dice-6.png";
+            document.getElementById("btn-rename-1").style.display = "none";
+            stopClicker();
+        }
+    } else {
+        if (confirm("This will reset the game to it's default and your friend will replace \"COMPUTER\".")) {
+            computer = 0;
+            renamePlayer1();
+            document.getElementById("btn-computer").innerHTML = `<ion-icon name="desktop-outline"></ion-icon>Play vs Computer`;
+            mainScore = [0, 0], currentScore = 0, activePlayer = 0, limit = 0, count = 0;
+            document.querySelector(".player-box-0").classList.remove("winner");
+            document.querySelector(".player-box-1").classList.remove("winner");
+            document.getElementById('btn-roll').style.display = "block";
+            document.getElementById('btn-add-pass').style.display = "block";
+            document.querySelector(".player-box-0").classList.add("active");
+            document.querySelector(".player-box-1").classList.remove("active");
+            document.getElementById("current-score-0").textContent = "00";
+            document.getElementById("current-score-1").textContent = "00";
+            document.getElementById("main-score-0").textContent = "00";
+            document.getElementById("main-score-1").textContent = "00";
+            document.getElementById("dice1").src = "dice-1.png";
+            document.getElementById("dice2").src = "dice-6.png";
+            stopClicker();
+        }
+    }   
 });
-
+ 
 document.getElementById("btn-single-dice").addEventListener("click", () => {
     if (confirm("Play with one dice insted of two.")) {
         window.open("../index.html","_self");
         stopClicker();
     }
 });
+
 
 
                                                                                 /*
