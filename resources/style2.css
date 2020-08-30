@@ -82,8 +82,8 @@ ion-icon {
 
 body {
     position: relative;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(62, 20, 20, 0.40)), to(rgba(62, 20, 20, 0.40))), url(resources/back.jpg);
-    background: linear-gradient(rgb(62, 20, 20, 0.40), rgba(62, 20, 20, 0.40)), url(resources/back.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(62, 20, 20, 0.40)), to(rgba(62, 20, 20, 0.40))), url(back.jpg);
+    background: linear-gradient(rgb(62, 20, 20, 0.40), rgba(62, 20, 20, 0.40)), url(back.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
