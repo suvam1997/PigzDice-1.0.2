@@ -71,3 +71,11 @@ B. Code Preview
 ### 8. query2.js ###
 
 ![quey2](https://user-images.githubusercontent.com/53318366/91643381-6fab4500-ea50-11ea-947e-ec1cd8d48ecc.png)
+
+C. Contact Me:
+=====
+
+* email: suvamdas27@gmail.com
+* instagram: https://www.instagram.com/mesuvam
+* linkedin: https://www.linkedin.com/in/suvam-das-81b3b2154/
+* facebook: https://www.facebook.com/chondro.bindu.chand.1997/
